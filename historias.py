@@ -25,7 +25,7 @@ def generate_with_ollama(prompt: str, ollama_url: str, model: str) -> str:
 @click.option("--save", is_flag=True, help="Guardar también el resultado en archivo.")
 @click.option("--outdir", default="historias", help="Directorio donde guardar archivos si se usa --save.")
 @click.option("--ollama-url", default="http://localhost:11434/api/generate", show_default=True, help="URL de la API de Ollama.")
-@click.option("--model", default="llama3.2", show_default=True, help="Modelo de Ollama a utilizar.")
+@click.option("--model", default="llama3.1", show_default=True, help="Modelo de Ollama a utilizar.")
 def generar_historia(rol, funcionalidad, beneficio, output, save, outdir, ollama_url, model):
     """Genera una historia de usuario enriquecida con ayuda de un modelo LLM (en Ollama)."""
 
